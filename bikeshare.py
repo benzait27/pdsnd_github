@@ -1,3 +1,8 @@
+#------start Metadata------
+#Creator:Zakaria BENZAIT
+#Date: 27/09/2021
+#Aim: Udacity Nanodegree
+#------End Metadata--------
 import time
 import pandas as pd
 import numpy as np
