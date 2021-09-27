@@ -17,8 +17,10 @@ an interactive experience in the terminal
 to present these statistics.
 
 ### Files used
-Include the files used
+several files are used
+bikeshare.py that include the code
+chicago.csv, new_york_city.csv and washington.csv that include the data.
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity nanodegree "Programming for datascience with Python"
