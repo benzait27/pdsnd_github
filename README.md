@@ -21,6 +21,8 @@ several files are used
 bikeshare.py that include the code
 chicago.csv, new_york_city.csv and washington.csv that include the data.
 
+### Software requirement
+The project is developed in Python using libraries like NumPy and pandas.
 
 ### Credits
 Udacity nanodegree "Programming for datascience with Python"
