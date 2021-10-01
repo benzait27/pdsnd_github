@@ -23,18 +23,15 @@ def get_filters():
     
     # In case the user does not enter the correct word
     while city.title() not in city_list : 
-            print("Please enter one of the following answers: 'Chicago','New York City','Washington'")
-            city =  input()
+            city =  input("Please enter one of the following answers: 'Chicago','New York City','Washington'")
     
     # TO DO: get user input for time filter (all, january, february, ... , june)
-    print('Would you like to filter data by month, day, both or not at all? type none for no time filter')
     time_filter_list = ["Month","Day","Both","None"]
-    time_filter = input()
+    time_filter = input('Would you like to filter data by month, day, both or not at all? type none for no time filter')
     
     # In case the user does not enter the correct word
     while time_filter.title() not in time_filter_list :
-        print("Please enter one of the following answers: 'Month','Day','Both','None'")
-        time_filter = input()
+        time_filter = input("Please enter one of the following answers: 'Month','Day','Both','None'")
 
     # Initialise variable    
     month = 'None'
@@ -42,25 +39,21 @@ def get_filters():
     
     # Get user input for month (january, february, ... , june)
     if time_filter.title() in ['Both','Month'] :
-        print('which month ? January, February , March, April, May or June')
         month_filter_list = ["January", "February","March","April","May", "June"] 
-        month = input()
+        month = input('which month ? January, February , March, April, May or June')
         
         # In case the user does not enter the correct word    
         while month.title() not in month_filter_list :
-            print("Please enter one of the following answers: 'January', 'February','March','April','May', 'June'")
-            month = input()
+            month = input("Please enter one of the following answers: 'January', 'February','March','April','May', 'June'")
     
    # Get user input for day of week (monday, tuesday, ... sunday)
     if time_filter.title() in ['Both','Day'] :
-        print('which day ? please type your response as an integer (e.g., 1=Sunday')
         day_filter_list = ['1','2','3','4','5','6','7']
-        day = input()
+        day = input('which day ? please type your response as an integer (e.g., 1=Sunday)')
         
         # In case the user does not enter the correct word       
         while day not in day_filter_list :
-            print("Please enter one of the following answers: '1','2','3','4','5','6','7'")
-            day = input()
+            day = input("Please enter one of the following answers: '1','2','3','4','5','6','7'")
     
     
     print('-'*40)
